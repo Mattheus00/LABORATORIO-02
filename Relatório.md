@@ -15,19 +15,21 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 
 ## 2. Coleta de Dados
 
-Utilizamos a API REST do GitHub para obter os 1.000 repositórios Java mais populares.
+A coleta foi realizada utilizando a API do GitHub, buscando os repositórios mais populares em Java, ordenados pelo número de estrelas. Os seguintes atributos foram extraídos:
 
-As seguintes informações foram extraídas e armazenadas em um arquivo CSV:
+- Nome do repositório  
+- URL  
+- Estrelas  
+- Data de criação  
+- Última atualização  
+- Tamanho do repositório (KB)  
+- Forks  
+- Issues abertas  
+- Watchers  
+- Commits  
+- Releases
 
-Nome do repositório
-
-URL
-
-Número de estrelas (popularidade)
-
-Número de releases (atividade)
-
-Data de criação (maturidade)
+Em seguida, os repositórios foram clonados e analisados por meio da ferramenta **CK (CKJM Extended)**, que extrai métricas de qualidade de software, como acoplamento, herança, coesão e linhas de código.
 
 2.2. Análise de Qualidade
 
