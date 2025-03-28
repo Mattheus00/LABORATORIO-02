@@ -13,23 +13,20 @@ RQ 03: Qual a relação entre a atividade dos repositórios e suas característi
 
 RQ 04: Qual a relação entre o tamanho dos repositórios e suas características de qualidade?
 
-## 2. Coleta de Dados
+## 2. Metodologia
 
-A coleta foi realizada utilizando a API do GitHub, buscando os repositórios mais populares em Java, ordenados pelo número de estrelas. Os seguintes atributos foram extraídos:
+- **Seleção dos Repositórios:** Os 1000 repositórios Java mais populares do GitHub foram coletados via API REST.
+- **Coleta das Métricas de Processo:** As seguintes informações foram extraídas:
+  - Popularidade: número de estrelas (`stars`)
+  - Maturidade: anos desde `created_at`
+  - Atividade: número de releases (via `releases_url`)
+  - Tamanho: linhas de código (`loc`) e de comentários (se disponível)
+- **Coleta das Métricas de Qualidade:** Utilizamos a ferramenta CK para extrair:
+  - `cbo`: Coupling between objects
+  - `dit`: Depth Inheritance Tree
+  - `lcom`: Lack of Cohesion of Methods
+  - `loc`: linhas de código (do CK)
 
-- Nome do repositório  
-- URL  
-- Estrelas  
-- Data de criação  
-- Última atualização  
-- Tamanho do repositório (KB)  
-- Forks  
-- Issues abertas  
-- Watchers  
-- Commits  
-- Releases
-
-Em seguida, os repositórios foram clonados e analisados por meio da ferramenta **CK**, que extrai métricas de qualidade de software, como acoplamento, herança, coesão e linhas de código.
 
 ## 3. Hipóteses
 H1: Repositórios com maior atividade (mais releases) tendem a apresentar melhor qualidade de código, pois passam por mais ciclos de manutenção e revisão.
