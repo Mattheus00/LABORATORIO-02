@@ -31,18 +31,18 @@ A coleta foi realizada utilizando a API do GitHub, buscando os repositórios mai
 
 Em seguida, os repositórios foram clonados e analisados por meio da ferramenta **CK**, que extrai métricas de qualidade de software, como acoplamento, herança, coesão e linhas de código.
 
-2.2. Análise de Qualidade
+## 3. Hipóteses
+H1: Repositórios com maior atividade (mais releases) tendem a apresentar melhor qualidade de código, pois passam por mais ciclos de manutenção e revisão.
 
-Clonamos os repositórios e executamos a ferramenta CK para coletar as métricas de qualidade:
+H2: Repositórios maiores (com mais linhas de código) podem apresentar menor coesão entre métodos (LCOM mais alto), devido ao aumento da complexidade do sistema.
 
-CBO: Acoplamento entre objetos
+H3: Repositórios mais maduros (com mais anos desde a criação) possuem maior acoplamento entre classes (CBO mais alto), devido à evolução do código ao longo do tempo.
 
-DIT: Profundidade da árvore de herança
+H4: Repositórios com maior popularidade (mais estrelas) tendem a ter um DIT (profundidade da hierarquia de herança) maior, pois frequentemente seguem padrões arquiteturais mais sofisticados.
 
-LCOM: Falta de coesão entre métodos
+H5: Repositórios ativos (com mais releases) possuem menos issues abertas, pois há uma manutenção mais constante por parte dos desenvolvedores.
 
-Os dados foram sumarizados por repositório utilizando medidas estatísticas (média, mediana e desvio padrão).
+H6: Projetos menores (em LOC) apresentam métricas de qualidade mais equilibradas (baixo CBO, DIT e LCOM), pois são mais fáceis de manter e modularizar.
 
-Testes de correlação (Pearson/Spearman) foram aplicados para analisar relações entre as métricas coletadas.
 
-3. Resultados
+## 4. Resultados
