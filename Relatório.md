@@ -54,7 +54,7 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - Correlação (anos x dit): 0,14 (~14% positiva)
 - **Conclusão:** Projetos mais antigos têm levemente maior DIT, o que confirma a hipótese de aumento da hierarquia com o tempo.
 
-![Gráfico: Maturidade vs Qualidade](imagens/maturidade_vs_metricas.png)
+![Gráfico: Maturidade vs Qualidade](lab-qualidade-java/imagens/rq02_maturidade_vs_dit.png)
 #### RQ03: Atividade vs Qualidade
 - Correlação (releases x cbo): 0,15 (~15% positiva)
 - Correlação (releases x lcom): 0,10 (~10% positiva)
