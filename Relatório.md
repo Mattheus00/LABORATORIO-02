@@ -1,6 +1,5 @@
-Análise da Qualidade de Sistemas Java
-
-1. Introdução
+## Relatório Final
+## 1. Introdução
 
 No desenvolvimento de sistemas open-source, diversos desenvolvedores colaboram em um mesmo repositório, o que pode afetar a qualidade do código. Aspectos como modularidade, manutenibilidade e legibilidade são críticos para a evolução do software.
 
@@ -14,9 +13,7 @@ RQ 03: Qual a relação entre a atividade dos repositórios e suas característi
 
 RQ 04: Qual a relação entre o tamanho dos repositórios e suas características de qualidade?
 
-2. Metodologia
-
-2.1. Coleta de Dados
+## 2. Coleta de Dados
 
 Utilizamos a API REST do GitHub para obter os 1.000 repositórios Java mais populares.
 
