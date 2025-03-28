@@ -67,7 +67,7 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - Correlação (loc x cbo): 0,10 (~10% positiva)
 - **Conclusão:** Tamanho do código influencia negativamente a qualidade (projetos maiores são mais acoplados e menos coesos).
 
-![Gráfico: Tamanho (LOC) vs Qualidade](imagens/loc_vs_metricas.png)
+![Gráfico: Tamanho (LOC) vs Qualidade](lab-qualidade-java/imagens/rq04_tamanho_vs_lcom.png)
 
 ---
 ### 5. Conclusão
