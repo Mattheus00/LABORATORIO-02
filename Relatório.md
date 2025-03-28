@@ -74,7 +74,6 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 
 Este estudo mostra que é possível extrair informações relevantes sobre qualidade de software open-source a partir de métricas objetivas. Ainda que os dados apresentem muita variabilidade, foram identificadas tendências entre características do processo e atributos de qualidade interna do código.
 
-Para trabalhos futuros, recomenda-se a inclusão de mais métricas (ex: comentários, complexidade ciclomática) e refinamento no agrupamento dos dados por contexto (framework, biblioteca, app, etc.).
 
 
 
