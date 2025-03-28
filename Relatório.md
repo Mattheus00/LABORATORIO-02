@@ -47,27 +47,27 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - Correlação Spearman (stars x dit): -0,05 (~5% negativa)
 - **Conclusão:** Pequena correlação negativa. Repositórios populares tendem levemente a ter melhor qualidade (menos acoplados).
 
-![Gráfico: Stars vs CBO, DIT, LCOM](imagens/stars_vs_metricas.png)
+![Gráfico: Stars vs CBO, DIT, LCOM](lab-qualidade-java/imagens/rq01_popularidade_vs_cbo.png)
 
 #### RQ02: Maturidade vs Qualidade
 - Correlação (anos x cbo): 0,03 (~3% positiva)
 - Correlação (anos x dit): 0,14 (~14% positiva)
 - **Conclusão:** Projetos mais antigos têm levemente maior DIT, o que confirma a hipótese de aumento da hierarquia com o tempo.
 
-![Gráfico: Maturidade vs Qualidade](imagens/maturidade_vs_metricas.png)
+![Gráfico: Maturidade vs Qualidade](lab-qualidade-java/imagens/rq02_maturidade_vs_dit.png)
 #### RQ03: Atividade vs Qualidade
 - Correlação (releases x cbo): 0,15 (~15% positiva)
 - Correlação (releases x lcom): 0,10 (~10% positiva)
 - **Conclusão:** Projetos mais ativos tendem a crescer em acoplamento e perder coesão, possivelmente pela entrada constante de novos códigos.
 
-![Gráfico: Atividade vs Qualidade](imagens/atividade_vs_metricas.png)
+![Gráfico: Atividade vs Qualidade](lab-qualidade-java/imagens/rq03_atividade_vs_lcom.png)
 
 #### RQ04: Tamanho vs Qualidade
 - Correlação (loc x lcom): 0,22 (~22% positiva)
 - Correlação (loc x cbo): 0,10 (~10% positiva)
 - **Conclusão:** Tamanho do código influencia negativamente a qualidade (projetos maiores são mais acoplados e menos coesos).
 
-![Gráfico: Tamanho (LOC) vs Qualidade](imagens/loc_vs_metricas.png)
+![Gráfico: Tamanho (LOC) vs Qualidade](lab-qualidade-java/imagens/rq04_tamanho_vs_lcom.png)
 
 ---
 ### 5. Conclusão
