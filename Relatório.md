@@ -26,20 +26,55 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
   - `dit`: Depth Inheritance Tree
   - `lcom`: Lack of Cohesion of Methods
   - `loc`: linhas de código (do CK)
+- **Processamento:**
+  - Arquivos `_class.csv` foram unificados em um único `metricas_unificadas.csv`
+  - As métricas de processo foram unidas ao dataset por nome de repositório
+  - Análise estatística feita com Python (pandas, seaborn, scipy)
 
 
 ## 3. Hipóteses
-H1: Repositórios com maior atividade (mais releases) tendem a apresentar melhor qualidade de código, pois passam por mais ciclos de manutenção e revisão.
-
-H2: Repositórios maiores (com mais linhas de código) podem apresentar menor coesão entre métodos (LCOM mais alto), devido ao aumento da complexidade do sistema.
-
-H3: Repositórios mais maduros (com mais anos desde a criação) possuem maior acoplamento entre classes (CBO mais alto), devido à evolução do código ao longo do tempo.
-
-H4: Repositórios com maior popularidade (mais estrelas) tendem a ter um DIT (profundidade da hierarquia de herança) maior, pois frequentemente seguem padrões arquiteturais mais sofisticados.
-
-H5: Repositórios ativos (com mais releases) possuem menos issues abertas, pois há uma manutenção mais constante por parte dos desenvolvedores.
-
-H6: Projetos menores (em LOC) apresentam métricas de qualidade mais equilibradas (baixo CBO, DIT e LCOM), pois são mais fáceis de manter e modularizar.
-
+**Hipóteses informais:**
+- Projetos mais populares tendem a ter melhor qualidade (baixo CBO, alta coesão).
+- Projetos mais maduros têm maior profundidade de herança (DIT).
+- Projetos com maior atividade podem apresentar maior acoplamento (CBO).
+- Projetos maiores (LOC) têm menor coesão (LCOM).
 
 ## 4. Resultados
+
+#### RQ01: Popularidade vs Qualidade
+- Correlação Spearman (stars x cbo): -0,12 (~12% negativa)
+- Correlação Spearman (stars x lcom): -0,09 (~9% negativa)
+- Correlação Spearman (stars x dit): -0,05 (~5% negativa)
+- **Conclusão:** Pequena correlação negativa. Repositórios populares tendem levemente a ter melhor qualidade (menos acoplados).
+
+![Gráfico: Stars vs CBO, DIT, LCOM](imagens/stars_vs_metricas.png)
+
+#### RQ02: Maturidade vs Qualidade
+- Correlação (anos x cbo): 0,03 (~3% positiva)
+- Correlação (anos x dit): 0,14 (~14% positiva)
+- **Conclusão:** Projetos mais antigos têm levemente maior DIT, o que confirma a hipótese de aumento da hierarquia com o tempo.
+
+![Gráfico: Maturidade vs Qualidade](imagens/maturidade_vs_metricas.png)
+#### RQ03: Atividade vs Qualidade
+- Correlação (releases x cbo): 0,15 (~15% positiva)
+- Correlação (releases x lcom): 0,10 (~10% positiva)
+- **Conclusão:** Projetos mais ativos tendem a crescer em acoplamento e perder coesão, possivelmente pela entrada constante de novos códigos.
+
+![Gráfico: Atividade vs Qualidade](imagens/atividade_vs_metricas.png)
+
+#### RQ04: Tamanho vs Qualidade
+- Correlação (loc x lcom): 0,22 (~22% positiva)
+- Correlação (loc x cbo): 0,10 (~10% positiva)
+- **Conclusão:** Tamanho do código influencia negativamente a qualidade (projetos maiores são mais acoplados e menos coesos).
+
+![Gráfico: Tamanho (LOC) vs Qualidade](imagens/loc_vs_metricas.png)
+
+---
+### 5. Conclusão
+
+Este estudo mostra que é possível extrair informações relevantes sobre qualidade de software open-source a partir de métricas objetivas. Ainda que os dados apresentem muita variabilidade, foram identificadas tendências entre características do processo e atributos de qualidade interna do código.
+
+Para trabalhos futuros, recomenda-se a inclusão de mais métricas (ex: comentários, complexidade ciclomática) e refinamento no agrupamento dos dados por contexto (framework, biblioteca, app, etc.).
+
+
+
