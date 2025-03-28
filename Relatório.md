@@ -29,7 +29,7 @@ A coleta foi realizada utilizando a API do GitHub, buscando os repositórios mai
 - Commits  
 - Releases
 
-Em seguida, os repositórios foram clonados e analisados por meio da ferramenta **CK (CKJM Extended)**, que extrai métricas de qualidade de software, como acoplamento, herança, coesão e linhas de código.
+Em seguida, os repositórios foram clonados e analisados por meio da ferramenta **CK**, que extrai métricas de qualidade de software, como acoplamento, herança, coesão e linhas de código.
 
 2.2. Análise de Qualidade
 
