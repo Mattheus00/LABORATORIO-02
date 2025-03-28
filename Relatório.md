@@ -47,7 +47,7 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - Correlação Spearman (stars x dit): -0,05 (~5% negativa)
 - **Conclusão:** Pequena correlação negativa. Repositórios populares tendem levemente a ter melhor qualidade (menos acoplados).
 
-![Gráfico: Stars vs CBO, DIT, LCOM](imagens/stars_vs_metricas.png)
+![Gráfico: Stars vs CBO, DIT, LCOM](lab-qualidade-java/imagens/rq01_popularidade_vs_cbo.png)
 
 #### RQ02: Maturidade vs Qualidade
 - Correlação (anos x cbo): 0,03 (~3% positiva)
