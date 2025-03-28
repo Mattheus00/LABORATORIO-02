@@ -60,7 +60,7 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - Correlação (releases x lcom): 0,10 (~10% positiva)
 - **Conclusão:** Projetos mais ativos tendem a crescer em acoplamento e perder coesão, possivelmente pela entrada constante de novos códigos.
 
-![Gráfico: Atividade vs Qualidade](imagens/atividade_vs_metricas.png)
+![Gráfico: Atividade vs Qualidade](lab-qualidade-java/imagens/rq03_atividade_vs_lcom.png)
 
 #### RQ04: Tamanho vs Qualidade
 - Correlação (loc x lcom): 0,22 (~22% positiva)
