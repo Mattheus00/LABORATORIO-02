@@ -29,7 +29,7 @@ RQ 04: Qual a relação entre o tamanho dos repositórios e suas característica
 - **Processamento:**
   - Arquivos `_class.csv` foram unificados em um único `metricas_unificadas.csv`
   - As métricas de processo foram unidas ao dataset por nome de repositório
-  - Análise estatística feita com Python (pandas, seaborn, scipy)
+  - Análise estatística feita com Python 
 
 
 ## 3. Hipóteses
